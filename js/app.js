@@ -36,7 +36,7 @@ $('#selection').change(selectImg);
 // when documents is loaded, we will dump all the images to the gallery
 $(document).ready(function (){
   //this is the jQuery methord to read JSON file.
-  $.getJSON('../data/page-1.json', function(item){
+  $.getJSON('data/page-1.json', function(item){
     //for each item in the JSON file, we will run a function to get the value of different property and DOM them to HTML;
     $.each(item, function(index){
       insertImg(item[index].title, item[index].image_url, item[index].keyword, item[index].description, item[index].keyword);
