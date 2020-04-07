@@ -1,0 +1,28 @@
+header h1{
+  font-size: 80px;
+  text-align: center;
+}
+
+header select {
+  font-size: 30px;
+  margin-left: 60px;
+}
+
+
+.photos {
+  float: left;
+  width:250px;
+  height: 400px;
+}
+.photos p {
+  font-size: medium;
+  padding: 10px;
+}
+.photos h2 {
+  font-size: x-large;
+  font-family: 'Nova Cut', cursive;
+  padding: 10px;
+
+}
+
+
