@@ -3,7 +3,21 @@ Deployed page: https://pengchen11.github.io/lab-02/
 
 # Lab 02: jQuery Selectors and Events
 
-## Configuration
+| Number and name of feature: | 1.Display images | 2.Filter images | 3.Style the application |
+|--|--|--|--|
+|Estimate of time needed to complete:| 1 h | 1 h | 1h |
+|Start time: |8 am|11 am|12 am| 
+|Finish time: |11 am|12 am|12:30 am|
+|Actual time needed to complete: |3h|1h|0.5h|
+
+Reason why feature 1 was holding back:  
+I was not familiar with $.Ajax. Spend hours to read the book and google searching. 
+
+
+-------
+
+
+## Required Configuration
 
 _Your repository must include the following config files:_
 
