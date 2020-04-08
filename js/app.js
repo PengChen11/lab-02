@@ -33,6 +33,7 @@ function selectImg(){
 }
 $('#selection').change(selectImg);
 
+//global variable for photo gallery and build up an constructor
 var photoArray = [];
 class ImgObj {
   constructor(title, url, keyword, description, horns) {
@@ -49,9 +50,12 @@ function initialLoad() {
   $.getJSON('data/page-1.json', function(item){
     //for each item in the JSON file, we will run a function to get the value of different property and DOM them to HTML;
     $.each(item, function(index){
+      //for each JSON item let's DOM to HTML
       insertImg(item[index].title, item[index].image_url, item[index].keyword, item[index].description, item[index].keyword);
+      //then add it to selection drop down menu
       setSelection(item[index].keyword);
       let newObj = new ImgObj(item[index].title,item[index].image_url,item[index].keyword,item[index].description, item[index].horns);
+      //finally add to our local array for sort functioni later on
       photoArray.push(newObj);
     });
   });
@@ -60,6 +64,7 @@ function initialLoad() {
 // when documents is loaded, we will dump all the images to the gallery
 $(document).ready(initialLoad ());
 
+// this is the function to sort by name
 function sortByName(){
   $('#gallery').empty();
   photoArray.sort((a,b) => (a.name > b.name)? 1 : -1);
@@ -68,6 +73,7 @@ function sortByName(){
   });
 }
 
+// this is the function to sort by number of horns
 function sortByHorn(){
   $('#gallery').empty();
   photoArray.sort((a,b) => (a.horns > b.horns)? 1 : -1);
@@ -77,12 +83,15 @@ function sortByHorn(){
 
 }
 
+// this is the vent listner to handel the sort list change
 $('#sort').change(()=> {
   let choosen = $('.sort:selected').val();
   if (choosen === 'name'){
     sortByName();
+    selectImg();
   } else if (choosen === 'horns'){
     sortByHorn();
+    selectImg();
   } else {
     location.reload(true);
   }
