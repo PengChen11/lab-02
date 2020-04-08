@@ -3,9 +3,10 @@ header h1{
   text-align: center;
 }
 
-header select {
-  font-size: 30px;
+#selection {
+  font-size: 25px;
   margin-left: 60px;
+  margin-top: 25px;
 }
 
 
@@ -25,4 +26,9 @@ header select {
 
 }
 
-
+#sort {
+  float: right;
+  font-size: 25px;
+  margin-top: 25px;
+  margin-right: 60px;
+}
