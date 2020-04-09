@@ -21,31 +21,30 @@ header h1{
 }
 .photos {
   width:250px;
-  height: 400px;
+  height: 410px;
   display:flex;
   flex-wrap: wrap;
   justify-content:center;
+  align-items: center;
 }
-.photos > * {
-  display: flex;
-  align-self: flex-end;
-  justify-content:center;
-}
-.photos img {
-  transition: transform .5s ease;
+img {
+  transition: transform .3s ease;
 }
 .photos:hover img{
-  transform: scale(2);
+  transform: scale(3);
 }
 .photos p {
   font-size: medium;
   padding: 10px;
+  display: flex;
+  align-self: flex-end;
 }
 .photos h2 {
   font-size: x-large;
   font-family: 'Nova Cut', cursive;
   padding: 10px;
-
+  display: flex;
+  align-self: flex-end;
 }
 
 #sortBy {

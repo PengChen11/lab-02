@@ -13,8 +13,10 @@ function insertImg(title, imgSrc, imgAlt, desc,keyword){
   $('#gallery').append(holder);
   let imgTitle = $('<h2></h2>').addClass('titles').text(title);
   let img = $('<img></img>').addClass('imgs').css('width','200px').attr('src',imgSrc).attr('alt',imgAlt);
+  let link = $('<a></a>').addClass('link').attr('href',imgSrc);
+  link.append(img);
   let info = $('<p></p>').addClass('desc').text(desc);
-  holder.append(img, imgTitle, info);
+  holder.append(link, imgTitle, info);
 }
 
 // function to create a selection list.
