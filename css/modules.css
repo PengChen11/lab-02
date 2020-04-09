@@ -3,17 +3,39 @@ header h1{
   text-align: center;
 }
 
-#selection {
+#filter {
   font-size: 25px;
   margin-left: 60px;
   margin-top: 25px;
+  float:left;
+}
+#filter select {
+  font-size: 25px;
 }
 
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 10px 10px 8px 10px #888888;
 
+}
 .photos {
-  float: left;
   width:250px;
   height: 400px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+.photos > * {
+  display: flex;
+  align-self: flex-end;
+  justify-content:center;
+}
+.photos img {
+  transition: transform .5s ease;
+}
+.photos:hover img{
+  transform: scale(2);
 }
 .photos p {
   font-size: medium;
@@ -26,9 +48,21 @@ header h1{
 
 }
 
-#sort {
-  float: right;
-  font-size: 25px;
-  margin-top: 25px;
-  margin-right: 60px;
+#sortBy {
+float:right;
+font-size: 25px;
+margin-top: 25px;
+margin-right: 60px;
 }
+#sortBy select {
+  font-size: 25px;
+}
+
+#button {
+  margin-bottom: 50px;
+  text-align: right;
+  clear:both;
+  margin-top: 30px;
+
+}
+

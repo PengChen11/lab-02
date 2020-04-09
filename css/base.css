@@ -1,6 +1,9 @@
 body{
   font-family: 'Special Elite', cursive;
-
+  background-color:whitesmoke;
 }
 
+button {
+  font-size: 25px;
+}
 
