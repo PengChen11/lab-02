@@ -19,12 +19,12 @@ I was not familiar with $.Ajax. Spend hours to read the book and google searchin
 ## Lab 03 Time estimate
 | Number and name of feature: | 1.Pagination | 2.Templating | 3.Styling with Flexbox | 4.Sort the images|
 |--|--|--|--|--|
-|Estimate of time needed to complete:| 1 h | 1 h | 1h | 1hr|
-|Start time: | | | | | 
-|Finish time: | | | | |
-|Actual time needed to complete: | | | | |
+|Estimate of time needed to complete:| 1 h | 1 h | 1h | 1h|
+|Start time: |1400 |2300 |1445 | done with last lab| 
+|Finish time: |1430 |2400 | 1550|done with last lab |
+|Actual time needed to complete: |0.5h | 1h |1h |done with last lab |
 
-
+Spend few more hours in the morning to get the stretch goal done. 
 
 
 -------

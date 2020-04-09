@@ -21,17 +21,24 @@ header h1{
 }
 .photos {
   width:250px;
-  height: 410px;
+  height: 350px;
   display:flex;
   flex-wrap: wrap;
   justify-content:center;
   align-items: center;
 }
-img {
+.photos img {
   transition: transform .3s ease;
+  display:flex;
+  align-self: center;
 }
+img:target {
+  height: 450px;
+  width: 500px;
+}
+
 .photos:hover img{
-  transform: scale(3);
+  transform: scale(1.3);
 }
 .photos p {
   font-size: medium;
@@ -65,3 +72,52 @@ margin-right: 60px;
 
 }
 
+/* this is to setup the background when zooming the img, by default, it is hidden */
+#img-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+/* when we attch the show class in JS to it, it will be displaed */
+#img-background.show {
+  visibility: visible;
+  opacity: 1;
+}
+#img-box {
+  text-align: center;
+  margin-top:50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imgs {
+  width:200px;
+  height: auto;
+}
+
+.zoomImgs {
+  height:600px;
+  width: auto;
+}
+.zoomBox {
+  font-size: 30px;
+  color: whitesmoke;
+}
+
+.zoomBox h2 {
+  font-family: 'Nova Cut', cursive;
+  padding:10px;
+}
+
+#info {
+  font-size: 20px;
+  padding-bottom: 30px;
+}
